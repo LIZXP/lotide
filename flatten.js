@@ -8,8 +8,8 @@
 const flatten = (arr1) =>{
   let newArray = [];
   for (let firstLoop of arr1) {
-    if (Array.isArray(firstLoop)){
-      for (sndLoop of firstLoop){
+    if (Array.isArray(firstLoop)) {
+      for (sndLoop of firstLoop) {
         newArray.push(sndLoop);
       }
     } else {
@@ -19,4 +19,4 @@ const flatten = (arr1) =>{
   return newArray;
 };
 
-console.log(flatten([1, 2, [3, 4], 5, [6]]))
+console.log(flatten([1, 2, [3, 4], 5, [6]]));
