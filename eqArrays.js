@@ -1,6 +1,10 @@
 
 const eqArrays = (arr1,arr2) => {
-  return arr1.toString() === arr2.toString();
+  if (arr1.length !== arr2.length){
+    return false;
+  }
+  return arr1.every((num) => arr2.includes(num));
+  //use every to check if each value passed in for "num" is equal to the "num" passed in from arr2. in this method even the order is wrong it still get true. 
 }
 
 
