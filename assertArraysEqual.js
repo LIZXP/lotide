@@ -4,14 +4,15 @@ const eqArrays = (arr1, arr2) => {
   }
   for (let loop1 of arr1) {
     for (let loop2 of arr2) {
-      if (loop1 !== loop2){
-        return false
+      if (loop1 !== loop2) {
+        return false;
+      } else {
+        return true;
       }
-      else {return true}
     }
-    }
-  
   }
+  
+};
 
 
 const assertArraysEqual = (arrnum1, arrnum2) => {
