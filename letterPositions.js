@@ -27,7 +27,7 @@ const letterPositions = function (sentence) {
     /* loop using this C style loop to find both letter
     and position of the letter [i]
     */
-    if (sentence[i] != " ") {
+    if (sentence[i] !== " ") {
       if (!results[sentence[i]]) {
         //We set the if statement by false is to got the postion into array in the first run.
         results[sentence[i]] = [i];
