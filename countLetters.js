@@ -1,6 +1,6 @@
 const countLetters = (string) => {
-  let newObj = {};
-  for (let letter of string) {
+  const newObj = {};
+  for (const letter of string) {
     if (letter === " ") {
       //skip the space first using continue.
       continue;
