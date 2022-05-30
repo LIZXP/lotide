@@ -1,4 +1,4 @@
-const takeUntil = function(array, callback) {
+const takeUntil = function (array, callback) {
   let newArray = [];
   for (let element of array) {
     if (callback(element)) {
