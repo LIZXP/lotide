@@ -1,12 +1,3 @@
-// take the input and find the key of that input then slice + 1
-// const takeUntil = (array, callback) => {
-//   const newArray = [];
-//   for (const ele of array) {
-//     array.slice(callback(0, Object.keys(ele)));
-//   }
-//   return array;
-// };
-
 const takeUntil = function (array, callback) {
   let newArray = [];
   for (let element of array) {
