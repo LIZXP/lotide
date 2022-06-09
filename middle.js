@@ -1,28 +1,3 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let loop1 of arr1) {
-    for (let loop2 of arr2) {
-      if (loop1 !== loop2) {
-        return false;
-      } else {
-        return true;
-      }
-    }
-  }
-  
-};
-
-
-const assertArraysEqual = (arrnum1, arrnum2) => {
-  if (eqArrays(arrnum1, arrnum2)) {
-    console.log(`💗💗💗 Assertion passed`);
-  } else {
-    console.log(`❌❌❌ Assertion failed)`);
-  }
-};
-
 /*
 - determind if the length can be remined by 2, then determinds where the 2 number start and end, we need to sliced from the array.
 - we will call the variable within the else statement to prevent the pollution.
@@ -41,5 +16,4 @@ const middle = (array) => {
   }
 };
 
-middle([1,2,3,4,5]);
-middle([1,2,3,4,5,6]);
+module.exports = middle;
