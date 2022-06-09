@@ -1,15 +1,3 @@
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe",
-];
-
 const countOnly = (allItems, itemsToCount) => {
   const newObj = {};
   for (const item of allItems) {
@@ -24,13 +12,7 @@ const countOnly = (allItems, itemsToCount) => {
   return newObj;
 };
 
-const result1 = countOnly(firstNames, {
-  Jason: true,
-  Karima: true,
-  Fang: true,
-  Agouhanna: false,
-});
-console.log(result1);
+module.exports = countOnly;
 
 // const countOnly = (allItems, itemsToCount) => {
 //   const newObj = {};

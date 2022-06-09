@@ -18,4 +18,4 @@ const countLetters = (string) => {
   return newObj;
 };
 
-console.log(countLetters("lighthouse in the house"));
+module.exports = countLetters;

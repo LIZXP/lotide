@@ -4,8 +4,7 @@
   -push everything to new array [solved]
 */
 
-
-const flatten = (arr1) =>{
+const flatten = (arr1) => {
   let newArray = [];
   for (let firstLoop of arr1) {
     if (Array.isArray(firstLoop)) {
@@ -19,4 +18,4 @@ const flatten = (arr1) =>{
   return newArray;
 };
 
-console.log(flatten([1, 2, [3, 4], 5, [6]]));
+module.exports = flatten;

@@ -1,25 +1,6 @@
 // loop the sentence.
 // find and loop for the key position. as [i]
 // test true or false with results{} then push the position
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = (arrnum1, arrnum2) => {
-  if (eqArrays(arrnum1, arrnum2)) {
-    console.log(`💗💗💗 Assertion passed`);
-  } else {
-    console.log(`❌❌❌ Assertion failed)`);
-  }
-};
 
 const letterPositions = function (sentence) {
   const results = {};
@@ -41,4 +22,4 @@ const letterPositions = function (sentence) {
   return results;
 };
 
-assertArraysEqual(letterPositions("hello").e, [1]);
+module.exports = letterPositions;
