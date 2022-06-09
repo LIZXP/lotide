@@ -1,6 +1,5 @@
 const assert = require("chai").assert;
 const tail = require("../tail");
-const eqArrays = require("../eqArrays");
 
 describe("#tail", () => {
   it("remove the first item and return the rest item to new array", () => {

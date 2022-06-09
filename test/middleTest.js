@@ -1,6 +1,5 @@
 const assert = require("chai").assert;
 const middle = require("../middle");
-const eqArrays = require("../eqArrays");
 
 describe("#middle", () => {
   it("return 3rd item if its odd length array", () => {
