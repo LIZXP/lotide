@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@lizxp/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide by lizxp",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/LIZXP/lotide.git"
   },
-  "author": "",
+  "author": "lizxp",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LIZXP/lotide/issues"
