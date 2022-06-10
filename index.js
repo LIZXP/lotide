@@ -10,8 +10,12 @@ const flatten = require("./flatten");
 const letterPositions = require("./letterPositions");
 const map = require("../lotide/map");
 const takeUntil = require("../lotide/takeUntil");
-const without = require("../lotide/without");
-
+const assertArraysEqual = require("./assertArraysEqual");
+const without = require("./without");
+const assertEqual = require("./assertEqual");
+const assertObjectsEqual = require("./assertObjectsEqual");
+const eqArrays = require("./eqArrays");
+const eqObjects = require("./eqObjects");
 module.exports = {
   head,
   tail,
@@ -26,4 +30,9 @@ module.exports = {
   map,
   takeUntil,
   without,
+  assertArraysEqual,
+  assertEqual,
+  assertObjectsEqual,
+  eqArrays,
+  eqObjects,
 };
