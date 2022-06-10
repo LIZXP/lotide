@@ -4,8 +4,11 @@ const countOnly = (allItems, itemsToCount) => {
     if (itemsToCount[item]) {
       if (newObj[item]) {
         newObj[item] += 1;
+        // on the first run newObj will be emppty and will go to the else first
+        // on the second run the newObj will have everything to 1 then plus 1
       } else {
         newObj[item] = 1;
+        // on the first run will set everything equal to 1
       }
     }
   }
@@ -13,18 +16,3 @@ const countOnly = (allItems, itemsToCount) => {
 };
 
 module.exports = countOnly;
-
-// const countOnly = (allItems, itemsToCount) => {
-//   const newObj = {};
-//   for (const item of allItems) {
-//     if (itemsToCount[item]) {
-//       if (newObj[item]) { // {} => {}.Jason => null/undefined [First run]
-//           //{Jason: 1} => {Jason: 1}.Jason => 1 => NOt null/undefined  [Second Run]
-//         newObj[item] += 1;
-//       } else {
-//         newObj[item] = 1; // { Jason: 1 } [First Run]
-//       }
-//     }
-//   }
-//   return newObj;
-// };
